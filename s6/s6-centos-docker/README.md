@@ -1,6 +1,6 @@
 # project42/s6-centos
 
-[![pipeline status](https://git.jordanclark.us/devops/s6-centos-docker/badges/master/pipeline.svg)](https://git.jordanclark.us/devops/s6-centos-docker/commits/master)
+(https://git.jordanclark.us/devops/s6-centos-docker/badges/master/pipeline.svg)](https://git.jordanclark.us/devops/s6-centos-docker/commits/master)
 
 ## Introduction
 A docker image based on CentOS Linux with the s6 process supervisor
