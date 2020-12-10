@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+
+exec /mnt/ramdisk/bin/php7/sbin/php-fpm --nodaemonize --fpm-config=/mnt/ramdisk/bin/php7/etc/php-fpm.d/www.conf
