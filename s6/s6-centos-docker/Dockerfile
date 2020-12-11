@@ -6,7 +6,7 @@ ARG S6_OVERLAY_MD5HASH=3060e2fdd92741ce38928150c0c0346a
 
 COPY container-files /
 
-RUN yum -y update && \
+RUN yum -y update --allowerasing && \
 cd /tmp && \
 curl -L https://www.dropbox.com/s/btf1q4fwjih03lx/s6-overlay-amd64.tar.gz -o s6-overlay-amd64.tar.gz && \
 echo "$S6_OVERLAY_MD5HASH *s6-overlay-amd64.tar.gz" | md5sum -c - && \
