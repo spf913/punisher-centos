@@ -8,7 +8,7 @@ COPY container-files /
 
 RUN yum -y update --allowerasing && \
 cd /tmp && \
-curl -L https://www.dropbox.com/s/btf1q4fwjih03lx/s6-overlay-amd64.tar.gz -o s6-overlay-amd64.tar.gz && \
+curl -L https://github.com/spf913/punisher-centos/releases/download/1.0/s6-overlay-amd64.tar.gz -o s6-overlay-amd64.tar.gz && \
 echo "$S6_OVERLAY_MD5HASH *s6-overlay-amd64.tar.gz" | md5sum -c - && \
 tar xzf s6-overlay-amd64.tar.gz -C / && \
 rm -f s6-overlay-amd64.tar.gz && \
