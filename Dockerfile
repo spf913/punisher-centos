@@ -89,8 +89,6 @@ RUN make -j$(nproc) && \
 # ~/.bashrc
 ADD .bashrc /root/.bashrc
 RUN /bin/bash -c "source /root/.bashrc" && \
-
-# pkg-config
     ln -s /usr/include/x86_64-linux-gnu/curl /usr/include/curl
 
 #
